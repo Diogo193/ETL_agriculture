@@ -430,7 +430,7 @@
     <created_date>2026/10/19 22:03:45.451</created_date>
     <modified_user>-</modified_user>
     <modified_date>2026/10/19 22:03:45.451</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -473,11 +473,11 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename/>
+    <filename>${Internal.Entry.Current.Directory}/dados_brutos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
-    <separator>,</separator>
+    <separator>;</separator>
     <enclosure>"</enclosure>
     <header>Y</header>
     <buffer_size>50000</buffer_size>
@@ -488,6 +488,105 @@
     <format>mixed</format>
     <encoding/>
     <fields>
+      <field>
+        <name>sensor_id</name>
+        <type>String</type>
+        <format/>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>7</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cultura</name>
+        <type>String</type>
+        <format/>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>7</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>humidade</name>
+        <type>BigNumber</type>
+        <format>#.#</format>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>temperatura_solo</name>
+        <type>BigNumber</type>
+        <format>#,###.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>humidade_minima</name>
+        <type>BigNumber</type>
+        <format>#,###.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>humidade_maxima</name>
+        <type>BigNumber</type>
+        <format>#,###.#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>4</length>
+        <precision>1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>resposta_json</name>
+        <type>String</type>
+        <format/>
+        <currency>€</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>471</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>temperatura_ar</name>
+        <type>BigNumber</type>
+        <format>#.##</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>velocidade_vento</name>
+        <type>BigNumber</type>
+        <format>#.##</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -499,81 +598,6 @@
     </remotesteps>
     <GUI>
       <xloc>224</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Regex evaluation</name>
-    <type>RegexEval</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <script>^SEN-\d{3}$</script>
-    <matcher>sensor_id</matcher>
-    <resultfieldname>id_valido</resultfieldname>
-    <usevar>N</usevar>
-    <allowcapturegroups>N</allowcapturegroups>
-    <replacefields>Y</replacefields>
-    <canoneq>N</canoneq>
-    <caseinsensitive>N</caseinsensitive>
-    <comment>N</comment>
-    <dotall>N</dotall>
-    <multiline>N</multiline>
-    <unicode>N</unicode>
-    <unix>N</unix>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filter rows</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to/>
-    <send_false_to/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>id_valido</leftvalue>
-        <function>TRUE</function>
-        <rightvalue/>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>528</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -620,6 +644,53 @@
     </GUI>
   </step>
   <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to/>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <leftvalue>id_valido</leftvalue>
+            <function>TRUE</function>
+            <rightvalue/>
+          </condition>
+          <condition>
+            <negated>N</negated>
+            <operator>AND</operator>
+            <leftvalue>humidade</leftvalue>
+            <function>IS NOT NULL</function>
+            <rightvalue/>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Memory group by</name>
     <type>MemoryGroupBy</type>
     <description/>
@@ -632,9 +703,18 @@
     </partitioning>
     <give_back_row>N</give_back_row>
     <group>
-      </group>
+      <field>
+        <name>cultura</name>
+      </field>
+    </group>
     <fields>
-      </fields>
+      <field>
+        <aggregate>media_humidade</aggregate>
+        <subject>humidade</subject>
+        <type>AVERAGE</type>
+        <valuefield/>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -646,6 +726,46 @@
     <GUI>
       <xloc>768</xloc>
       <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Regex evaluation</name>
+    <type>RegexEval</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <script>^SEN-\d{3}$</script>
+    <matcher>sensor_id</matcher>
+    <resultfieldname>id_valido</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>N</allowcapturegroups>
+    <replacefields>Y</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>N</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>N</unicode>
+    <unix>N</unix>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -668,7 +788,7 @@
     <footer>N</footer>
     <format>DOS</format>
     <compression>None</compression>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <endedLine/>
     <fileNameInField>N</fileNameInField>
     <fileNameField/>
@@ -691,6 +811,30 @@
       <splitevery/>
     </file>
     <fields>
+      <field>
+        <name>cultura</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>7</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>media_humidade</name>
+        <type>BigNumber</type>
+        <format>#.#</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
