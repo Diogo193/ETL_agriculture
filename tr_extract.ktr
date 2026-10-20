@@ -470,7 +470,7 @@
     <hop>
       <from>Join rows (cartesian product)</from>
       <to>Text file output</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
   </order>
   <step>

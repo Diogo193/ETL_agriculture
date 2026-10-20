@@ -1,3 +1,2 @@
 sensor_id;cultura;humidade;temperatura_solo;humidade_minima;humidade_maxima;temperatura_ar;velocidade_vento;id_valido;motivo
-SEN-003;ERR_999;;99;;;11.6;2.4;Y;
-SEN-003;ERR_999;;99;;;11.6;2.4;Y;
+SEN-003;ERR_999;;99;;;12;2.1;Y;cultura desconhecida
