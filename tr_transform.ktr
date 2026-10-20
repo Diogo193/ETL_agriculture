@@ -447,11 +447,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
-      <to>Calculator</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Calculator</from>
       <to>Memory group by</to>
       <enabled>Y</enabled>
@@ -459,6 +454,16 @@
     <hop>
       <from>Memory group by</from>
       <to>Text file output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Write to log</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Calculator</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -515,8 +520,8 @@
         <type>BigNumber</type>
         <format>#.#</format>
         <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
+        <decimal>.</decimal>
+        <group>,</group>
         <length>4</length>
         <precision>1</precision>
         <trim_type>none</trim_type>
@@ -570,8 +575,8 @@
         <type>BigNumber</type>
         <format>#.##</format>
         <currency>€</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -581,8 +586,8 @@
         <type>BigNumber</type>
         <format>#.##</format>
         <currency>€</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -654,8 +659,8 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to/>
-    <send_false_to/>
+    <send_true_to>Calculator</send_true_to>
+    <send_false_to>Write to log</send_false_to>
     <compare>
       <condition>
         <negated>N</negated>
@@ -712,6 +717,12 @@
         <aggregate>media_humidade</aggregate>
         <subject>humidade</subject>
         <type>AVERAGE</type>
+        <valuefield/>
+      </field>
+      <field>
+        <aggregate>humidade_minima</aggregate>
+        <subject>humidade_minima</subject>
+        <type>CONCAT_STRING</type>
         <valuefield/>
       </field>
     </fields>
@@ -819,8 +830,8 @@
         <decimal/>
         <group/>
         <nullif/>
-        <trim_type>none</trim_type>
-        <length>7</length>
+        <trim_type>right</trim_type>
+        <length>-1</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -829,7 +840,19 @@
         <format>#.#</format>
         <currency/>
         <decimal>.</decimal>
-        <group/>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>humidade_minima</name>
+        <type>BigNumber</type>
+        <format>#,###.#</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
@@ -847,6 +870,68 @@
     <GUI>
       <xloc>928</xloc>
       <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Write to log</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage>Sensor rejeitado!ID invalido ou humidade nula!</logmessage>
+    <fields>
+      <field>
+        <name>sensor_id</name>
+      </field>
+      <field>
+        <name>cultura</name>
+      </field>
+      <field>
+        <name>humidade</name>
+      </field>
+      <field>
+        <name>temperatura_solo</name>
+      </field>
+      <field>
+        <name>humidade_minima</name>
+      </field>
+      <field>
+        <name>humidade_maxima</name>
+      </field>
+      <field>
+        <name>resposta_json</name>
+      </field>
+      <field>
+        <name>temperatura_ar</name>
+      </field>
+      <field>
+        <name>velocidade_vento</name>
+      </field>
+      <field>
+        <name>id_valido</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>672</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
