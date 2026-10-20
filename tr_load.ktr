@@ -430,7 +430,7 @@
     <created_date>2026/10/20 16:37:58.039</created_date>
     <modified_user>-</modified_user>
     <modified_date>2026/10/20 16:37:58.039</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -441,7 +441,7 @@
     <type>SQLITE</type>
     <access>Native</access>
     <database>${Internal.Entry.Current.Directory}/agricola.db</database>
-    <port/>
+    <port>-1</port>
     <username/>
     <password>Encrypted </password>
     <servername/>
@@ -458,6 +458,10 @@
       </attribute>
       <attribute>
         <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
         <attribute>N</attribute>
       </attribute>
       <attribute>
@@ -496,6 +500,11 @@
     <hop>
       <from>Filter rows</from>
       <to>Write to log</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Write to log</from>
+      <to>Text file output</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -570,6 +579,41 @@
     <GUI>
       <xloc>240</xloc>
       <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Write to log</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>media_humidade</leftvalue>
+        <function>&lt;</function>
+        <rightvalue>humidade_minima</rightvalue>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -665,49 +709,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
-      <yloc>416</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filter rows</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Write to log</send_true_to>
-    <send_false_to>Mail</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>media_humidade</leftvalue>
-        <function>&lt;</function>
-        <rightvalue>humidade_minima</rightvalue>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>384</xloc>
+      <xloc>528</xloc>
       <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Mail</name>
-    <type>Mail</type>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -716,48 +725,74 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <server/>
-    <port/>
-    <destination/>
-    <destinationCc/>
-    <destinationBCc/>
-    <replyToAddresses/>
-    <replyto/>
-    <replytoname/>
-    <subject/>
-    <include_date>N</include_date>
-    <include_subfolders>N</include_subfolders>
-    <zipFilenameDynamic>N</zipFilenameDynamic>
-    <isFilenameDynamic>N</isFilenameDynamic>
-    <attachContentFromField>N</attachContentFromField>
-    <attachContentField/>
-    <attachContentFileNameField/>
-    <dynamicFieldname/>
-    <dynamicWildcard/>
-    <dynamicZipFilename/>
-    <sourcefilefoldername/>
-    <sourcewildcard/>
-    <contact_person/>
-    <contact_phone/>
-    <comment/>
-    <include_files>N</include_files>
-    <zip_files>N</zip_files>
-    <zip_name/>
-    <zip_limit_size/>
-    <use_auth>N</use_auth>
-    <use_secure_auth>N</use_secure_auth>
-    <auth_user/>
-    <auth_password>Encrypted </auth_password>
-    <only_comment>N</only_comment>
-    <use_HTML>N</use_HTML>
-    <use_Priority>N</use_Priority>
-    <encoding/>
-    <priority/>
-    <importance/>
-    <sensitivity/>
-    <secureconnectiontype/>
-    <embeddedimages>
-      </embeddedimages>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/alertas</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>cultura</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>media_humidade</name>
+        <type>BigNumber</type>
+        <format>#.##</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>humidade_minima</name>
+        <type>BigNumber</type>
+        <format>#</format>
+        <currency>€</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -767,8 +802,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
-      <yloc>352</yloc>
+      <xloc>640</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
