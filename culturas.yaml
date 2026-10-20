@@ -1,0 +1,12 @@
+---
+id: MILHO
+humidade_minima: 60.0
+humidade_maxima: 85.0
+---
+id: VINHA
+humidade_minima: 40.0
+humidade_maxima: 70.0
+---
+id: OLIVAL
+humidade_minima: 30.0
+humidade_maxima: 60.0

@@ -1,0 +1,6 @@
+[
+  {"sensor_id": "SEN-001", "cultura": "MILHO", "humidade": 52.4, "temperatura_solo": 21.5},
+  {"sensor_id": "SEN-002", "cultura": "VINHA", "humidade": 45.0, "temperatura_solo": 23.1},
+  {"sensor_id": "SEN-003", "cultura": "ERR_999", "humidade": null, "temperatura_solo": 99.0},
+  {"sensor_id": "SEN-004", "cultura": "OLIVAL", "humidade": 28.1, "temperatura_solo": 24.0}
+]
