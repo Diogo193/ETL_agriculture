@@ -541,12 +541,12 @@
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>-1</length>
+        <length>6</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>media_humidade</name>
+        <name>limiar_alerta</name>
         <type>BigNumber</type>
         <format>#.##</format>
         <currency>€</currency>
@@ -557,9 +557,9 @@
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>humidade_minima</name>
+        <name>media_humidade</name>
         <type>BigNumber</type>
-        <format>#</format>
+        <format>#.##</format>
         <currency>€</currency>
         <decimal>.</decimal>
         <group>,</group>
@@ -600,7 +600,7 @@
         <negated>N</negated>
         <leftvalue>media_humidade</leftvalue>
         <function>&lt;</function>
-        <rightvalue>humidade_minima</rightvalue>
+        <rightvalue>limiar_alerta</rightvalue>
       </condition>
     </compare>
     <attributes/>
@@ -651,12 +651,12 @@
         <stream_name>cultura</stream_name>
       </field>
       <field>
-        <column_name>media_humidade</column_name>
-        <stream_name>media_humidade</stream_name>
+        <column_name>limiar_alerta</column_name>
+        <stream_name>limiar_alerta</stream_name>
       </field>
       <field>
-        <column_name>humidade_minima</column_name>
-        <stream_name>humidade_minima</stream_name>
+        <column_name>media_humidade</column_name>
+        <stream_name>media_humidade</stream_name>
       </field>
     </fields>
     <attributes/>
@@ -694,10 +694,10 @@
         <name>cultura</name>
       </field>
       <field>
-        <name>media_humidade</name>
+        <name>limiar_alerta</name>
       </field>
       <field>
-        <name>humidade_minima</name>
+        <name>media_humidade</name>
       </field>
     </fields>
     <attributes/>
@@ -765,11 +765,11 @@
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>-1</length>
+        <length>6</length>
         <precision>-1</precision>
       </field>
       <field>
-        <name>media_humidade</name>
+        <name>limiar_alerta</name>
         <type>BigNumber</type>
         <format>#.##</format>
         <currency>€</currency>
@@ -781,9 +781,9 @@
         <precision>0</precision>
       </field>
       <field>
-        <name>humidade_minima</name>
+        <name>media_humidade</name>
         <type>BigNumber</type>
-        <format>#</format>
+        <format>#.##</format>
         <currency>€</currency>
         <decimal>.</decimal>
         <group>,</group>

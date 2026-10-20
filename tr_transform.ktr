@@ -841,7 +841,19 @@
         <decimal/>
         <group/>
         <nullif/>
-        <trim_type>right</trim_type>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>limiar_alerta</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
         <length>-1</length>
         <precision>-1</precision>
       </field>
@@ -851,19 +863,7 @@
         <format>#.#</format>
         <currency/>
         <decimal>.</decimal>
-        <group>,</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>humidade_minima</name>
-        <type>BigNumber</type>
-        <format>#,###.#</format>
-        <currency/>
-        <decimal>.</decimal>
-        <group>,</group>
+        <group/>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
@@ -1160,7 +1160,7 @@
     </partitioning>
     <formula>
       <field_name>limiar_alerta</field_name>
-      <formula_string/>
+      <formula_string>[humidade_minima] +IF([temperatura_ar] > 10; 5; 0) + IF([velocidade_vento] >1; 3; 0 )</formula_string>
       <value_type>BigNumber</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
