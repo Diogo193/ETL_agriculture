@@ -1629,8 +1629,8 @@
     <fields>
       <field>
         <name>salt</name>
-        <variable>2</variable>
-        <type>Number</type>
+        <variable>${SALT}</variable>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -1667,7 +1667,7 @@
     </partitioning>
     <formula>
       <field_name>conc_sen_salt</field_name>
-      <formula_string>([sensor_id]&amp;[salt])</formula_string>
+      <formula_string>CONCATENATE( [sensor_id] ; [salt] )</formula_string>
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
@@ -1750,10 +1750,6 @@
       </field>
       <field>
         <name>temperatura_solo</name>
-        <rename/>
-      </field>
-      <field>
-        <name>timestamp</name>
         <rename/>
       </field>
       <field>
@@ -1854,111 +1850,85 @@
         <decimal/>
         <group/>
         <nullif/>
-        <length>7</length>
+        <length>-1</length>
         <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>humidade</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>4</length>
-        <precision>1</precision>
+        <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>temperatura_solo</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>4</length>
-        <precision>1</precision>
-      </field>
-      <field>
-        <content_type>Element</content_type>
-        <name>timestamp</name>
-        <element/>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>19</length>
         <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>humidade_minima</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>4</length>
-        <precision>1</precision>
+        <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>humidade_maxima</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>4</length>
-        <precision>1</precision>
+        <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>temperatura_ar</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>15</length>
-        <precision>0</precision>
+        <precision>-1</precision>
       </field>
       <field>
         <content_type>Element</content_type>
         <name>velocidade_vento</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>15</length>
-        <precision>0</precision>
-      </field>
-      <field>
-        <content_type>Element</content_type>
-        <name>timestamp_valido</name>
-        <element/>
-        <type>Boolean</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
         <precision>-1</precision>
       </field>
       <field>
@@ -1966,7 +1936,7 @@
         <name>deficit_humidade</name>
         <element/>
         <type>Number</type>
-        <format/>
+        <format>#.#</format>
         <currency/>
         <decimal/>
         <group/>
@@ -1978,11 +1948,11 @@
         <content_type>Element</content_type>
         <name>limiar_alerta</name>
         <element/>
-        <type>BigNumber</type>
-        <format/>
+        <type>Number</type>
+        <format>#.#</format>
         <currency/>
-        <decimal/>
-        <group/>
+        <decimal>.</decimal>
+        <group>,</group>
         <nullif/>
         <length>-1</length>
         <precision>-1</precision>

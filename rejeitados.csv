@@ -1,4 +1,4 @@
 sensor_id;cultura;humidade;temperatura_solo;humidade_minima;humidade_maxima;temperatura_ar;velocidade_vento;id_valido;timestamp;timestamp_valido;motivo
-SEN-003;ERR_999;;99;;;15.4;11.2;Y;2026-10-21T14:30:00Z;Y;cultura desconhecida
-SEN-005;ERR_999;60;;;;15.4;11.2;Y;2026-34-21T14:30:00Z;N;timestamp inváido
-SEN-006;ERR_999;;;;;15.4;11.2;Y;2026-10-21T14:89:00Z;N;timestamp inváido
+SEN-003;ERR_999;;99;;;10.2;5.2;Y;2026-10-21T14:30:00Z;Y;cultura desconhecida
+SEN-005;ERR_999;60;;;;10.2;5.2;Y;2026-34-21T14:30:00Z;N;timestamp inváido
+SEN-006;ERR_999;;;;;10.2;5.2;Y;2026-10-21T14:89:00Z;N;timestamp inváido
