@@ -1,3 +1,2 @@
 cultura;limiar_alerta;media_humidade
-MILHO;60;52.4
-OLIVAL;30;28.1
+MILHO;60;53.3

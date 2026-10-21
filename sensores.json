@@ -1,8 +1,13 @@
 [
   {"sensor_id": "SEN-001", "cultura": "MILHO", "humidade": 52.4, "temperatura_solo": 21.5, "timestamp": "2026-10-21T14:30:00Z"},
+  {"sensor_id": "SEN-001", "cultura": "MILHO", "humidade": 52.4, "temperatura_solo": 21.5, "timestamp": "2026-10-21T14:30:00Z"},
   {"sensor_id": "SEN-002", "cultura": "VINHA", "humidade": 45.0, "temperatura_solo": 23.1, "timestamp": "2026-10-21T14:30:00Z"},
   {"sensor_id": "SEN-003", "cultura": "ERR_999", "humidade": null, "temperatura_solo": 99.0, "timestamp": "2026-10-21T14:30:00Z"},
   {"sensor_id": "SEN-004", "cultura": "OLIVAL", "humidade": 28.1, "temperatura_solo": 24.0, "timestamp": "2026-10-21T14:30:00Z"},
   {"sensor_id": "SEN-005", "cultura": "ERR_999", "humidade": 60.0, "temperatura_solo": null, "timestamp": "2026-34-21T14:30:00Z"},
-  {"sensor_id": "SEN-006", "cultura": "ERR_999", "humidade": null, "temperatura_solo": null, "timestamp": "2026-10-21T14:89:00Z"}
+  {"sensor_id": "SEN-006", "cultura": "ERR_999", "humidade": null, "temperatura_solo": null, "timestamp": "2026-10-21T14:89:00Z"},
+  {"sensor_id": "SEN-007", "cultura": "MILHO", "humidade": 55.0, "temperatura_solo": 22.5, "timestamp": "2026-10-21T14:30:00Z"},
+  {"sensor_id": "SEN-008", "cultura": "VINHA", "humidade": 48.0, "temperatura_solo": 20.0, "timestamp": "2026-10-21T14:30:00Z"},
+  {"sensor_id": "SEN-009", "cultura": "OLIVAL", "humidade": 50.0, "temperatura_solo": 25.0, "timestamp": "2026-10-21T14:30:00Z"},
+  {"sensor_id": "SEN-001", "cultura": "MILHO", "humidade": 52.4, "temperatura_solo": 21.5, "timestamp": "2026-10-22T14:30:00Z"}
 ]
