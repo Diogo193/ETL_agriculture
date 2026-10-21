@@ -622,7 +622,7 @@
     <fields>
       <field>
         <name>sensor_id</name>
-        <path>$.[*].sensor_id</path>
+        <path>$[*].sensor_id</path>
         <type>String</type>
         <format/>
         <currency/>
@@ -635,7 +635,7 @@
       </field>
       <field>
         <name>cultura</name>
-        <path>$.[*].cultura</path>
+        <path>$[*].cultura</path>
         <type>String</type>
         <format/>
         <currency/>
@@ -648,7 +648,7 @@
       </field>
       <field>
         <name>humidade</name>
-        <path>$.[*].humidade</path>
+        <path>$[*].humidade</path>
         <type>Number</type>
         <format/>
         <currency/>
@@ -661,8 +661,21 @@
       </field>
       <field>
         <name>temperatura_solo</name>
-        <path>$.[*].temperatura_solo</path>
+        <path>$[*].temperatura_solo</path>
         <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>timestamp</name>
+        <path>$[*].timestamp</path>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -905,7 +918,7 @@
       <field>
         <name>humidade</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format/>
         <currency/>
         <decimal>.</decimal>
         <group>,</group>
@@ -917,7 +930,7 @@
       <field>
         <name>temperatura_solo</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format/>
         <currency/>
         <decimal>.</decimal>
         <group>,</group>
@@ -927,9 +940,21 @@
         <precision>-1</precision>
       </field>
       <field>
+        <name>timestamp</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>humidade_minima</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format/>
         <currency/>
         <decimal>.</decimal>
         <group>,</group>
@@ -941,7 +966,7 @@
       <field>
         <name>humidade_maxima</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format/>
         <currency/>
         <decimal>.</decimal>
         <group>,</group>
@@ -955,8 +980,8 @@
         <type>String</type>
         <format/>
         <currency/>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal/>
+        <group/>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
@@ -967,8 +992,8 @@
         <type>String</type>
         <format/>
         <currency/>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal/>
+        <group/>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
