@@ -579,6 +579,7 @@
     <compatibilityMode>N</compatibilityMode>
     <oldChecksumBehaviour>N</oldChecksumBehaviour>
     <evaluationMethod>BYTES</evaluationMethod>
+    <fieldSeparatorString/>
     <fields>
       <field>
         <name>conc_sen_salt</name>
@@ -1354,36 +1355,47 @@
     <fields>
       <field>
         <name>sensor_anon</name>
+        <rename/>
       </field>
       <field>
         <name>cultura</name>
+        <rename/>
       </field>
       <field>
         <name>humidade</name>
+        <rename/>
       </field>
       <field>
         <name>temperatura_solo</name>
+        <rename/>
       </field>
       <field>
         <name>timestamp</name>
+        <rename/>
       </field>
       <field>
         <name>humidade_minima</name>
+        <rename/>
       </field>
       <field>
         <name>humidade_maxima</name>
+        <rename/>
       </field>
       <field>
         <name>temperatura_ar</name>
+        <rename/>
       </field>
       <field>
         <name>velocidade_vento</name>
+        <rename/>
       </field>
       <field>
         <name>deficit_humidade</name>
+        <rename/>
       </field>
       <field>
         <name>limiar_alerta</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>

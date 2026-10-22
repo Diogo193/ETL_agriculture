@@ -4,10 +4,10 @@ Trabalho Prático I — **Integração de Sistemas de Informação (ISI)** · Li
 
 | | |
 |---|---|
-| **Aluno** | Diogo — nº `<NÚMERO DE ALUNO>` |
+| **Aluno** | Diogo — nº `29339` |
 | **Ferramenta** | Pentaho Data Integration (Kettle) 10.2 |
-| **Relatório** | [`doc/<NÚMERO DE ALUNO>_doc.pdf`](doc/) |
-| **Vídeo de demonstração** | `<LINK DO VÍDEO>` |
+| **Relatório** | [`doc/29339_doc.pdf`](doc/) |
+| **Vídeo de demonstração** | `https://drive.google.com/file/d/1wr-2wHoVuEphqnKi2UwvQj_g_BjHxob_/view?usp=sharing` |
 
 ---
 

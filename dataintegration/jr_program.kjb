@@ -437,7 +437,7 @@
       <fields>
         <field>
           <variable_name>SALT</variable_name>
-          <variable_value>3</variable_value>
+          <variable_value>2345</variable_value>
           <variable_type>CURRENT_JOB</variable_type>
         </field>
       </fields>

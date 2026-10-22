@@ -260,3 +260,162 @@
 2026/10/22 12:46:56 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
 2026/10/22 12:46:56 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
 2026/10/22 12:46:56 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
+2026/10/22 15:04:46 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 15:04:46 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 15:04:46 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 15:04:46 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:04:46 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 15:04:46 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 15:04:46 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:04:46 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:04:46 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 15:04:46 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 15:04:47 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 15:04:47 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 15:04:47 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 15:04:47 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 15:04:47 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:04:47 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:04:47 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:04:47 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:04:47 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:04:47 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 15:04:47 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 15:04:47 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:04:47 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:04:47 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:04:47 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:04:47 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:04:47 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:04:47 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 15:04:47 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:04:47 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 15:04:47 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:04:47 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:04:47 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:04:47 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:04:47 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 15:04:48 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 15:04:48 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 15:04:48 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 15:04:48 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 15:04:48 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 15:04:48 - Write to log.0 - 
+2026/10/22 15:04:48 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 15:04:48 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 15:04:48 - Write to log.0 - 
+2026/10/22 15:04:48 - Write to log.0 - cultura = MILHO
+2026/10/22 15:04:48 - Write to log.0 - limiar_alerta = 60
+2026/10/22 15:04:48 - Write to log.0 - media_humidade = 53.3
+2026/10/22 15:04:48 - Write to log.0 - 
+2026/10/22 15:04:48 - Write to log.0 - ====================
+2026/10/22 15:04:48 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 15:04:48 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026/10/22 15:04:48 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:04:48 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
+2026/10/22 15:16:58 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 15:16:58 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 15:16:58 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 15:16:58 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 15:16:58 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:16:58 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 15:16:59 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:16:59 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:16:59 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 15:16:59 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 15:16:59 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 15:16:59 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 15:16:59 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 15:16:59 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:16:59 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 15:16:59 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 15:16:59 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:16:59 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:16:59 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:16:59 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:16:59 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:16:59 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:16:59 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 15:16:59 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:16:59 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:16:59 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 15:16:59 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:16:59 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:16:59 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:16:59 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 15:17:00 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 15:17:00 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 15:17:00 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 15:17:00 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 15:17:00 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 15:17:00 - Write to log.0 - 
+2026/10/22 15:17:00 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 15:17:00 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 15:17:00 - Write to log.0 - 
+2026/10/22 15:17:00 - Write to log.0 - cultura = MILHO
+2026/10/22 15:17:00 - Write to log.0 - limiar_alerta = 60
+2026/10/22 15:17:00 - Write to log.0 - media_humidade = 53.3
+2026/10/22 15:17:00 - Write to log.0 - 
+2026/10/22 15:17:00 - Write to log.0 - ====================
+2026/10/22 15:17:00 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026/10/22 15:17:00 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 15:17:00 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:17:00 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
+2026/10/22 15:26:12 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 15:26:12 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 15:26:12 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 15:26:12 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:26:12 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 15:26:12 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 15:26:12 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:26:12 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:26:12 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 15:26:12 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 15:26:13 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 15:26:13 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 15:26:13 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 15:26:13 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 15:26:13 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 15:26:13 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:26:13 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:26:13 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:26:13 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 15:26:13 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 15:26:13 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 15:26:13 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:26:13 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:26:13 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:26:13 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:26:13 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 15:26:13 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:26:13 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 15:26:13 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:26:13 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 15:26:13 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 15:26:13 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:26:13 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:26:13 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 15:26:13 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 15:26:14 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 15:26:14 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 15:26:14 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 15:26:14 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 15:26:14 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 15:26:14 - Write to log.0 - 
+2026/10/22 15:26:14 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 15:26:14 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 15:26:14 - Write to log.0 - 
+2026/10/22 15:26:14 - Write to log.0 - cultura = MILHO
+2026/10/22 15:26:14 - Write to log.0 - limiar_alerta = 60
+2026/10/22 15:26:14 - Write to log.0 - media_humidade = 53.3
+2026/10/22 15:26:14 - Write to log.0 - 
+2026/10/22 15:26:14 - Write to log.0 - ====================
+2026/10/22 15:26:14 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 15:26:14 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 15:26:14 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026/10/22 15:26:14 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
