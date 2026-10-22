@@ -1,0 +1,262 @@
+2026/10/22 12:22:26 - tr_extract - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Unable to run job jr_program. The tr_extract has an error. The transformation path file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/dataintegration/tr_extract.ktr is invalid, and will not run successfully.
+2026/10/22 12:22:26 - tr_extract - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : org.pentaho.di.core.exception.KettleXMLException: 
+2026/10/22 12:22:26 - tr_extract - The transformation path file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/dataintegration/tr_extract.ktr is invalid, and will not run successfully.
+2026/10/22 12:22:26 - tr_extract - 
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.trans.TransMeta.<init>(TransMeta.java:2798)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.base.MetaFileLoaderImpl.getMetaForEntry(MetaFileLoaderImpl.java:172)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1304)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:714)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:708)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:521)
+2026/10/22 12:22:26 - tr_extract - 	at org.pentaho.di.job.Job.run(Job.java:400)
+2026/10/22 12:22:47 - tr_extract - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Unable to run job jr_program. The tr_extract has an error. The transformation path file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegrationtr_extract.ktr is invalid, and will not run successfully.
+2026/10/22 12:22:47 - tr_extract - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : org.pentaho.di.core.exception.KettleXMLException: 
+2026/10/22 12:22:47 - tr_extract - The transformation path file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegrationtr_extract.ktr is invalid, and will not run successfully.
+2026/10/22 12:22:47 - tr_extract - 
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.trans.TransMeta.<init>(TransMeta.java:2798)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.base.MetaFileLoaderImpl.getMetaForEntry(MetaFileLoaderImpl.java:172)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.getTransMeta(JobEntryTrans.java:1304)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.entries.trans.JobEntryTrans.execute(JobEntryTrans.java:714)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:708)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:856)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.execute(Job.java:521)
+2026/10/22 12:22:47 - tr_extract - 	at org.pentaho.di.job.Job.run(Job.java:400)
+2026/10/22 12:23:00 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 12:23:00 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 12:23:00 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 12:23:01 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:23:01 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:23:01 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=0)
+2026/10/22 12:23:02 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 12:23:02 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 12:23:02 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 12:23:02 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/dados_brutos.csv'
+2026/10/22 12:23:02 - CSV file input.0 - Finished processing (I=1, O=0, R=0, W=0, U=0, E=0)
+2026/10/22 12:23:03 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 12:23:03 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 12:23:03 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 12:23:03 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/dados_processados.csv'
+2026/10/22 12:23:03 - CSV file input.0 - Finished processing (I=1, O=0, R=0, W=0, U=0, E=0)
+2026/10/22 12:23:03 - Table output.0 - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erro inesperado
+2026/10/22 12:23:03 - Table output.0 - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2026/10/22 12:23:03 - Table output.0 - Couldn't execute SQL: DELETE FROM relatorio_humidade
+2026/10/22 12:23:03 - Table output.0 - 
+2026/10/22 12:23:03 - Table output.0 - [SQLITE_ERROR] SQL error or missing database (no such table: relatorio_humidade)
+2026/10/22 12:23:03 - Table output.0 - 
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1616)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1566)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.core.database.Database.truncateTable(Database.java:3355)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.truncateTable(TableOutput.java:543)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.processRow(TableOutput.java:74)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:63)
+2026/10/22 12:23:03 - Table output.0 - 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026/10/22 12:23:03 - Table output.0 - Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: relatorio_humidade)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.DB.throwex(DB.java:1150)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.NativeDB.prepare(NativeDB.java:126)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.core.DB.prepare(DB.java:264)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.lambda$execute$0(JDBC3Statement.java:51)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+2026/10/22 12:23:03 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.execute(JDBC3Statement.java:40)
+2026/10/22 12:23:03 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1591)
+2026/10/22 12:23:03 - Table output.0 - 	... 6 more
+2026/10/22 12:23:03 - tr_load - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erros detectados!
+2026/10/22 12:23:03 - Table output.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/10/22 12:23:03 - tr_load - Transforma��o detectada 
+2026/10/22 12:23:03 - tr_load - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erros detectados!
+2026/10/22 12:23:03 - tr_load - Transforma��o est� matando os outros steps!
+2026/10/22 12:44:10 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 12:44:10 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 12:44:10 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 12:44:10 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:44:10 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 12:44:10 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 12:44:10 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:44:10 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:44:10 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 12:44:10 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 12:44:11 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 12:44:11 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 12:44:11 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 12:44:11 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 12:44:11 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:44:11 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:44:11 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:44:11 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:44:11 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:44:11 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 12:44:11 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 12:44:11 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:44:11 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:44:11 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:44:11 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:44:11 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:44:11 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:44:11 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 12:44:11 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 12:44:11 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:44:11 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:44:11 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:44:11 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:44:11 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:44:11 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 12:44:12 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 12:44:12 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 12:44:12 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 12:44:12 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 12:44:12 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 12:44:12 - Write to log.0 - 
+2026/10/22 12:44:12 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 12:44:12 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 12:44:12 - Write to log.0 - 
+2026/10/22 12:44:12 - Write to log.0 - cultura = MILHO
+2026/10/22 12:44:12 - Write to log.0 - limiar_alerta = 60
+2026/10/22 12:44:12 - Write to log.0 - media_humidade = 53.3
+2026/10/22 12:44:12 - Write to log.0 - 
+2026/10/22 12:44:12 - Write to log.0 - ====================
+2026/10/22 12:44:12 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026/10/22 12:44:12 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 12:44:12 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:44:12 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:36 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 12:46:36 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 12:46:36 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 12:46:36 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:46:36 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 12:46:36 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 12:46:37 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:37 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:37 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:37 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 12:46:37 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 12:46:37 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 12:46:37 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 12:46:37 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:37 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 12:46:37 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 12:46:37 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:37 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:37 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:37 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:46:37 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:37 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:37 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 12:46:37 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:37 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 12:46:37 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:46:37 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:37 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:37 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:37 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:38 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 12:46:38 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 12:46:38 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 12:46:38 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 12:46:38 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 12:46:38 - Write to log.0 - 
+2026/10/22 12:46:38 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 12:46:38 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 12:46:38 - Write to log.0 - 
+2026/10/22 12:46:38 - Write to log.0 - cultura = MILHO
+2026/10/22 12:46:38 - Write to log.0 - limiar_alerta = 60
+2026/10/22 12:46:38 - Write to log.0 - media_humidade = 53.3
+2026/10/22 12:46:38 - Write to log.0 - 
+2026/10/22 12:46:38 - Write to log.0 - ====================
+2026/10/22 12:46:38 - Table output.0 - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erro inesperado
+2026/10/22 12:46:38 - Table output.0 - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2026/10/22 12:46:38 - Table output.0 - Couldn't execute SQL: DELETE FROM relatorio_humidade
+2026/10/22 12:46:38 - Table output.0 - 
+2026/10/22 12:46:38 - Table output.0 - [SQLITE_ERROR] SQL error or missing database (no such table: relatorio_humidade)
+2026/10/22 12:46:38 - Table output.0 - 
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1616)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1566)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.core.database.Database.truncateTable(Database.java:3355)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.truncateTable(TableOutput.java:543)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.processRow(TableOutput.java:82)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:63)
+2026/10/22 12:46:38 - Table output.0 - 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026/10/22 12:46:38 - Table output.0 - Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: relatorio_humidade)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.DB.throwex(DB.java:1150)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.NativeDB.prepare(NativeDB.java:126)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.core.DB.prepare(DB.java:264)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.lambda$execute$0(JDBC3Statement.java:51)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+2026/10/22 12:46:38 - Table output.0 - 	at org.sqlite.jdbc3.JDBC3Statement.execute(JDBC3Statement.java:40)
+2026/10/22 12:46:38 - Table output.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1591)
+2026/10/22 12:46:38 - Table output.0 - 	... 6 more
+2026/10/22 12:46:38 - Table output.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2026/10/22 12:46:38 - tr_load - Transforma��o detectada 
+2026/10/22 12:46:38 - tr_load - Transforma��o est� matando os outros steps!
+2026/10/22 12:46:38 - tr_load - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erros detectados!
+2026/10/22 12:46:38 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:38 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:38 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 12:46:38 - tr_load - ERROR (version 10.2.0.0-222, build 0.0 from 2024-08-07 08.09.13 by buildguy) : Erros detectados!
+2026/10/22 12:46:54 - tr_extract - Using run configuration [Pentaho local]
+2026/10/22 12:46:54 - tr_extract - Expedindo in�cio para transforma��o [tr_extract]
+2026/10/22 12:46:54 - Generate rows.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/10/22 12:46:54 - JSON input 2.0 - Finished processing (I=11, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:46:54 - YAML input.0 - Finished processing (I=0, O=3, R=0, W=3, U=0, E=0)
+2026/10/22 12:46:54 - Stream lookup.0 - Finished processing (I=0, O=0, R=14, W=11, U=0, E=0)
+2026/10/22 12:46:54 - REST client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:54 - JSON input.0 - Finished processing (I=1, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:54 - Join rows (cartesian product).0 - Finished processing (I=0, O=0, R=12, W=11, U=0, E=0)
+2026/10/22 12:46:54 - Text file output.0 - Finished processing (I=0, O=12, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:55 - tr_transform - Using run configuration [Pentaho local]
+2026/10/22 12:46:55 - tr_transform - Expedindo in�cio para transforma��o [tr_transform]
+2026/10/22 12:46:55 - XML output.0 - Opening output stream in encoding: UTF-8
+2026/10/22 12:46:55 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_brutos.csv'
+2026/10/22 12:46:55 - CSV file input.0 - Finished processing (I=12, O=0, R=0, W=11, U=0, E=0)
+2026/10/22 12:46:55 - Regex evaluation.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:55 - Regex evaluation 2.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:55 - Filter rows.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:55 - Filter rows 4.0 - Finished processing (I=0, O=0, R=11, W=11, U=0, E=0)
+2026/10/22 12:46:55 - Add constants 4.0 - Finished processing (I=0, O=0, R=2, W=2, U=0, E=0)
+2026/10/22 12:46:55 - Filter rows 3.0 - Finished processing (I=0, O=0, R=9, W=9, U=0, E=0)
+2026/10/22 12:46:55 - Add constants 3.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:55 - Filter rows 2.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:55 - Calculator.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:55 - Formula.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:55 - Sort rows.0 - Finished processing (I=0, O=0, R=8, W=8, U=0, E=0)
+2026/10/22 12:46:55 - Text file output 2.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:46:55 - Unique rows.0 - Finished processing (I=0, O=0, R=8, W=14, U=0, E=0)
+2026/10/22 12:46:55 - Get variables.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:55 - Memory group by.0 - Finished processing (I=0, O=0, R=7, W=3, U=0, E=0)
+2026/10/22 12:46:55 - Formula 2.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:55 - Add a checksum.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:55 - Text file output.0 - Finished processing (I=0, O=4, R=3, W=3, U=0, E=0)
+2026/10/22 12:46:55 - Select values.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:55 - XML output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2026/10/22 12:46:56 - tr_load - Using run configuration [Pentaho local]
+2026/10/22 12:46:56 - tr_load - Expedindo in�cio para transforma��o [tr_load]
+2026/10/22 12:46:56 - Table output.0 - Connected to database [dados_connection] (commit=1000)
+2026/10/22 12:46:56 - CSV file input.0 - Header row skipped in file 'file:///C:/Users/Diogo/Documents/projetos/ETL_agriculture/dataintegration/../data/output/dados_processados.csv'
+2026/10/22 12:46:56 - CSV file input.0 - Finished processing (I=4, O=0, R=0, W=6, U=0, E=0)
+2026/10/22 12:46:56 - Write to log.0 - 
+2026/10/22 12:46:56 - Write to log.0 - ------------> Linenr 1------------------------------
+2026/10/22 12:46:56 - Write to log.0 - "ALERTA: Necessidade de rega detetada!"
+2026/10/22 12:46:56 - Write to log.0 - 
+2026/10/22 12:46:56 - Write to log.0 - cultura = MILHO
+2026/10/22 12:46:56 - Write to log.0 - limiar_alerta = 60
+2026/10/22 12:46:56 - Write to log.0 - media_humidade = 53.3
+2026/10/22 12:46:56 - Write to log.0 - 
+2026/10/22 12:46:56 - Write to log.0 - ====================
+2026/10/22 12:46:56 - Filter rows.0 - Finished processing (I=0, O=0, R=3, W=1, U=0, E=0)
+2026/10/22 12:46:56 - Table output.0 - Finished processing (I=0, O=3, R=3, W=3, U=0, E=0)
+2026/10/22 12:46:56 - Write to log.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/10/22 12:46:56 - Text file output.0 - Finished processing (I=0, O=2, R=1, W=1, U=0, E=0)

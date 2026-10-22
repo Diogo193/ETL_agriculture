@@ -613,7 +613,7 @@
     <includeNulls>N</includeNulls>
     <rownum_field/>
     <file>
-      <name>${Internal.Entry.Current.Directory}/sensores.json</name>
+      <name>${Internal.Entry.Current.Directory}/../data/input/sensores.json</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -874,7 +874,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/dados_brutos</name>
+      <name>${Internal.Entry.Current.Directory}/../data/output/dados_brutos</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1035,7 +1035,7 @@
     <rownum_field/>
     <encoding/>
     <file>
-      <name>${Internal.Entry.Current.Directory}/culturas.yaml</name>
+      <name>${Internal.Entry.Current.Directory}/../data/input/culturas.yaml</name>
       <filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>

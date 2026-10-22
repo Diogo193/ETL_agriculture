@@ -765,7 +765,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${Internal.Entry.Current.Directory}/dados_brutos.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/../data/output/dados_brutos.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1476,7 +1476,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/dados_processados</name>
+      <name>${Internal.Entry.Current.Directory}/../data/output/dados_processados</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1569,7 +1569,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>${Internal.Entry.Current.Directory}/rejeitados</name>
+      <name>${Internal.Entry.Current.Directory}/../data/output/rejeitados</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1800,7 +1800,7 @@
     <xml_main_element>Rows</xml_main_element>
     <xml_repeat_element>Row</xml_repeat_element>
     <file>
-      <name>${Internal.Entry.Current.Directory}/dados_anon</name>
+      <name>${Internal.Entry.Current.Directory}/../data/output/dados_anon</name>
       <extention>xml</extention>
       <servlet_output>N</servlet_output>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
